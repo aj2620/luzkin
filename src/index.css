@@ -17,4 +17,5 @@ body {
   justify-content: center;
   align-items: center;
   font-family: system-ui, -apple-system, sans-serif;
+  overflow: hidden;
 }
