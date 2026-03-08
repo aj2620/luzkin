@@ -73,6 +73,8 @@
 @media (max-width: 768px) {
   .content {
     width: 90%;
+    /* Override 50% top position to nudge it up */
+    top: 40%;
   }
 
   .glass-card {
