@@ -1,5 +1,6 @@
 import './App.css'
 import ColorBends from './components/colorbends/ColorBends';
+import Shuffle from './components/shuffle/Shuffle';
 import logo from './assets/logo1.webp';
 
 function App() {
@@ -22,7 +23,23 @@ function App() {
       <div className="content">
         <div className="glass-card">
           <img src={logo} alt="Logo" className="logo" />
-          <h1 className="title">LUZKIN</h1>
+          <Shuffle
+            text="LUZKIN"
+            className="title"
+            tag="h1"
+            shuffleDirection="right"
+            duration={2.5}
+            animationMode="evenodd"
+            shuffleTimes={1}
+            ease="power3.out"
+            stagger={0.4}
+            threshold={0.1}
+            triggerOnce={true}
+            triggerOnHover
+            respectReducedMotion={true}
+            loop
+            loopDelay={0.9}
+          />
           <p className="subtitle">coming soon</p>
         </div>
       </div>
