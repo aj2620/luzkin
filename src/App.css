@@ -22,13 +22,11 @@
   transform: translate(-50%, -50%);
   z-index: 2;
   text-align: center;
-  /* Allow pointer events so users can interact with the card natively if needed later */
   pointer-events: auto;
 }
 
 .glass-card {
   background: rgba(255, 255, 255, 0.05);
-  /* very subtle white tint for the glass effect */
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -45,7 +43,6 @@
 .title {
   margin: 0;
   margin-bottom: -10px;
-  /* pull subtitle closer */
   font-family: 'Noto Serif Display', serif;
   font-size: 6rem;
   letter-spacing: 8px;
@@ -65,15 +62,12 @@
 
 .logo {
   max-width: 150px;
-  /* This filter turns any non-transparent colored image into stark white */
   filter: brightness(0) invert(1);
 }
 
-/* --- Mobile Responsiveness --- */
 @media (max-width: 768px) {
   .content {
     width: 90%;
-    /* Override 50% top position to nudge it up */
     top: 40%;
   }
 
